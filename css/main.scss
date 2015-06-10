@@ -5,8 +5,198 @@
 @import "bootstrap";
 @import "kickback/bootswatch";
 
-@import "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
 
+@font-face {
+  font-family: 'kickback';
+  src: url('../fonts/kickback.eot');
+  src: url('../fonts/kickback.eot#iefix') format('embedded-opentype'),
+       url('../fonts/kickback.woff') format('woff'),
+       url('../fonts/kickback.ttf') format('truetype'),
+       url('../fonts/kickback.svg#kickback') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../images/intro-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > .logo {
+  max-width: 400px;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 50px 0;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.section-heading + p {
+  font-size: 18px;
+}
+
+.section-icon {
+  font-size: 250px;
+  width: 100%;
+  text-align: center;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.contact {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../images/contact-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.contact h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.contact ul {
+    margin-bottom: 0;
+}
+
+.contact-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.contact-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .contact h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.contact-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.contact-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+/* Brand Buttons */
+.btn-youtube {
+  background-color: #cd201f;
+  border-color: #cd201f;
+  color: #fff;
+}
+.btn-youtube:hover,
+.btn-youtube:focus, .btn-youtube.focus,
+.btn-youtube:active, .btn-youtube.active,
+.open > .btn-youtube.dropdown-toggle {
+  color: #fff;
+  background-color: #a11918;
+  border-color: #a11918;
+}
+
+/* Kickback Icon */
 @font-face {
   font-family: 'kickback';
   src: url('../fonts/kickback.eot');
