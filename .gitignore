@@ -1,0 +1,7 @@
+# Jekyll Files
+_site/
+.sass-cache/
+.jekyll-metadata
+
+# OS-specific files
+.DS_Store

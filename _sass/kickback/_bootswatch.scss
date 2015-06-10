@@ -1,0 +1,296 @@
+// Custom 3.3.2
+// Bootswatch
+// -----------------------------------------------------
+
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+
+
+// Navbar =====================================================================
+
+.dropdown-header {
+  text-transform: uppercase;
+  font-size: ceil(($font-size-base * 0.75)); // ~11px
+}
+
+.navbar-fixed-top {
+  border-bottom: none;
+}
+
+// Breadcrumbs ================================================================
+
+.breadcrumb {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 50px; /* Accounts for navbar */
+  z-index: $zindex-navbar-fixed;
+}
+
+// Buttons ====================================================================
+
+.btn {
+  &-labeled {
+    padding: 0 $padding-base-horizontal;
+  }
+
+  &-label {
+    position: relative;
+    left: -$padding-base-horizontal;
+    display: inline-block;
+    padding: $padding-base-vertical $padding-base-horizontal;
+    background: rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Typography =================================================================
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.text-primary,
+.text-primary:hover {
+  color: $brand-primary;
+}
+
+.text-success,
+.text-success:hover {
+  color: $brand-success;
+}
+
+.text-danger,
+.text-danger:hover {
+  color: $brand-danger;
+}
+
+.text-warning,
+.text-warning:hover {
+  color: $brand-warning;
+}
+
+.text-info,
+.text-info:hover {
+  color: $brand-info;
+}
+
+// Tables =====================================================================
+
+.table {
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.table-expanded {
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: 15px;
+      }
+    }
+  }
+}
+
+// Forms ======================================================================
+
+.form-control,
+input, {
+  @include box-shadow(#{"none"});
+
+  &:focus {
+    @include box-shadow(#{"none"});
+  }
+}
+
+select.form-control {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.has-warning {
+  .control-label,
+  .form-control-feedback {
+    color: $brand-warning;
+  }
+
+  .help-block {
+    margin-top: 0;
+    background-color: $brand-warning;
+    color: #fff;
+    padding: 4px 8px;
+  }
+
+  .form-control,
+  .form-control:focus,
+  .input-group-addon {
+    border: 1px solid $brand-warning;
+  }
+}
+
+.has-error {
+  .control-label,
+  .form-control-feedback {
+    color: $brand-danger;
+  }
+
+  .help-block {
+    margin-top: 0;
+    background-color: $brand-danger;
+    color: #fff;
+    padding: 4px 8px;
+  }
+
+  .form-control,
+  .form-control:focus,
+  .input-group-addon {
+    border: 1px solid $brand-danger;
+  }
+}
+
+.has-success {
+  .control-label,
+  .form-control-feedback {
+    color: $brand-success;
+  }
+
+  .help-block {
+    margin-top: 0;
+    background-color: $brand-success;
+    color: #fff;
+    padding: 4px 8px;
+  }
+
+  .form-control,
+  .form-control:focus,
+  .input-group-addon {
+    border: 1px solid $brand-success;
+  }
+}
+
+// Navs =======================================================================
+
+// Dropdown variants
+@mixin dropdown-variant($color, $background) {
+  & > a {
+    &:hover,
+    &:focus {
+      color: $color;
+      text-decoration: none;
+      outline: 0;
+      background-color: $background;
+    }
+  }
+
+  &.active > a {
+    &,
+    &:hover,
+    &:focus {
+      color: $color;
+      text-decoration: none;
+      outline: 0;
+      background-color: $background;
+    }
+  }
+
+  &.disabled > a {
+    &,
+    &:hover,
+    &:focus {
+      color: $dropdown-link-disabled-color;
+      background-color: transparent;
+    }
+  }
+}
+
+// Primary state
+.dropdown-menu > .primary {
+  @include dropdown-variant(#fff, $brand-primary);
+}
+
+// Success state
+.dropdown-menu > .success {
+  @include dropdown-variant(#fff, $brand-success);
+}
+
+// Info state
+.dropdown-menu > .info {
+  @include dropdown-variant(#fff, $brand-info);
+}
+
+// Warning state
+.dropdown-menu > .warning {
+  @include dropdown-variant(#fff, $brand-warning);
+}
+
+// Danger state
+.dropdown-menu > .danger {
+  @include dropdown-variant(#fff, $brand-danger);
+}
+
+// Indicators =================================================================
+
+.close {
+  text-decoration: none;
+  text-shadow: none;
+  opacity: 0.4;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}
+
+.label {
+  border-radius: 0;
+}
+
+.alert {
+    position: fixed;
+    top: $navbar-height;
+    left: 0;
+    z-index: $zindex-alert-fixed;
+    width: 100%;
+    margin: 0;
+
+  .alert-link {
+    text-decoration: underline;
+    color: #fff;
+  }
+}
+
+@media (min-width: 992px) {
+  .alert {
+    left: 50%;
+    width: 992px;
+    margin-left: -496px;
+  }
+}
+
+// Progress bars ==============================================================
+
+// Containers =================================================================
+
+.modal {
+  .close {
+    color: $text-color;
+  }
+
+  &-content {
+    @include box-shadow(#{"none"});
+  }
+}
+
+.popover {
+  @include box-shadow(#{"none"});
+}
