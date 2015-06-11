@@ -88,47 +88,6 @@ html {
     }
 }
 
-.about-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
-    text-align: center;
-    color: #f8f8f8;
-    background: url(../images/intro-bg.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.about-message {
-    position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
-}
-
-.about-message > .logo {
-  max-width: 400px;
-}
-
-.about-message > h1 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
-}
-
-.about-divider {
-    width: 400px;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-
-@media(max-width:767px) {
-    .about-message {
-        padding-bottom: 15%;
-    }
-
-    .about-message > h1 {
-        font-size: 3em;
-    }
-}
-
 .network-name {
     text-transform: uppercase;
     font-size: 14px;
@@ -288,6 +247,8 @@ p.copyright {
   z-index: 1000;
 }
 
+/* About Page */
+
 .about {
 	overflow: hidden;
 	height: 100%;
@@ -296,7 +257,7 @@ p.copyright {
 .letter {
   background: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  margin: 15% auto 0;
+  margin: 9% auto 0;
   max-width: 550px;
   min-height: 300px;
   padding: 24px;
@@ -335,4 +296,68 @@ p.copyright {
   right: -3px;
   top: 1px;
   transform: rotate(1.4deg);
+}
+
+@media(max-width:767px) {
+	.letter {
+		margin: 15% auto 0;
+	}
+}
+
+@media(max-width:467px) {
+	.letter {
+		height: 850px;
+		overflow-x: scroll;
+	}
+}
+
+/* Compare Page */
+
+.sub-title {
+	font-size: 10px;
+	margin: -5px -2px 0 0;
+	padding: 0;
+}
+
+.compare {
+	height: 100%;
+	background: #eee;
+	text-align: center;
+	line-height: 120px;
+}
+
+.left, .grey {
+	text-align: left;
+}
+
+.grey, .company {
+	background: #f4f4f4;
+}
+
+.company {
+	text-align: center;
+}
+
+.table th, .table td, .table { 
+	border-top: none !important;
+}
+
+.table {
+	margin: 1% auto 0;
+	width: 70%;
+	line-height: 120px;
+}
+
+.compare h3 {
+	text-align: center;
+	padding-top: 5%;
+}
+
+.table img {
+	vertical-align: middle;
+}
+
+.kickback {
+//	box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+	color: #446cb3;
 }
