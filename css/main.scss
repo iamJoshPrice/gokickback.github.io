@@ -18,10 +18,9 @@
   font-style: normal;
 }
 
-body,
-html {
-    width: 100%;
-    height: 100%;
+body {
+  margin-top: 80px;
+  margin-bottom: 67px;
 }
 
 .lead {
@@ -30,7 +29,7 @@ html {
 }
 
 .intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    margin-top: -30px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
@@ -249,10 +248,7 @@ p.copyright {
 
 /* About Page */
 
-.about {
-	overflow: hidden;
-	height: 100%;
-}
+
 
 .letter {
   background: #fff;
