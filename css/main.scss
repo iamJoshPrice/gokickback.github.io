@@ -319,45 +319,32 @@ p.copyright {
 	padding: 0;
 }
 
-.compare {
-	height: 100%;
-	background: #eee;
-	text-align: center;
-	line-height: 120px;
-}
-
-.left, .grey {
-	text-align: left;
-}
-
-.grey, .company {
-	background: #f4f4f4;
-}
-
-.company {
-	text-align: center;
-}
-
-.table th, .table td, .table { 
+.table th, .table td, .table {
 	border-top: none !important;
-}
-
-.table {
-	margin: 1% auto 0;
-	width: 70%;
-	line-height: 120px;
-}
-
-.compare h3 {
-	text-align: center;
-	padding-top: 5%;
 }
 
 .table img {
 	vertical-align: middle;
 }
 
-.kickback {
-//	box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
-	color: #446cb3;
+tr.logos img {
+  padding: 10px;
+  height: 90px;
+}
+
+tr.logos .kickback img {
+  padding: 10px;
+  height: 50px;
+}
+
+thead .kickback {
+  background-color: #446cb3;
+  color: #fff;
+  font-weight: bold;
+}
+
+tbody .kickback {
+  background-color: darken(#446cb3, 10%);
+  color: #fff;
+  font-weight: bold;
 }
